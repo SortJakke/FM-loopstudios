@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <title>Frontend Mentor | Loopstudios landing page</title>
+
+    <script src="./scripts/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a
+        class="logo"
+        href="#"
+        aria-label="Loopstudios logo redirects to home page"
+      >
+        <img src="./images/logo.svg" alt="Loopstudios" />
+      </a>
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-label="Pages menu"
+        aria-haspopup="true"
+        aria-controls="pages-link"
+        aria-expanded="false"
+      >
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Careers</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Events</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Products</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Support</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article class="hero">
+        <figure class="hero__content">
+          <picture class="hero__image">
+            <source
+              srcset="./images/desktop/image-hero.jpg"
+              media="(min-width:700px)"
+            />
+            <img src="./images/mobile/image-hero.jpg" alt="" />
+          </picture>
+          <div class="hero__limiter">
+            <figcaption class="hero__text">
+              Immersive experiences that deliver
+            </figcaption>
+          </div>
+        </figure>
+      </article>
+      <article class="interactive">
+        <figure class="interactive__image">
+          <picture>
+            <source
+              srcset="./images/desktop/image-interactive.jpg"
+              media="(min-width:600px)"
+            />
+            <img
+              src="./images/mobile/image-interactive.jpg"
+              alt="A person wearing a VR headset interacts with a digital environment using hand gestures, set against a vibrant purple background."
+            />
+          </picture>
+        </figure>
+        <div class="interactive__text">
+          <h1 class="interactive__heading">The leader in interactive VR</h1>
+          <p class="interactive__paragraph">
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </div>
+      </article>
+      <article class="creations">
+        <h1 class="creations__heading">Our creations</h1>
+        <div class="creations__list">
+          <figure class="card" tabindex="0">
+            <picture class="card__image">
+              <source
+                srcset="./images/desktop/image-deep-earth.jpg"
+                media="(min-width:600px)" />
+              <img
+                src="./images/mobile/image-deep-earth.jpg"
+                alt="Deep Earth – A stunning cosmic view of Earth from space, showcasing its vibrant blues and swirling clouds against the vast darkness."
+            /></picture>
+            <figcaption class="card__heading">
+              Deep <br />
+              earth
+            </figcaption>
+          </figure>
+          <figure class="card" tabindex="0">
+            <picture class="card__image">
+              <source
+                srcset="./images/desktop/image-night-arcade.jpg"
+                media="(min-width:600px)" />
+              <img
+                src="./images/mobile/image-night-arcade.jpg"
+                alt="Night Arcade – A neon-lit arcade featuring an interactive game where players aim and hit balls at illuminated targets, creating an energetic atmosphere."
+            /></picture>
+            <figcaption class="card__heading">
+              Night <br />
+              arcade
+            </figcaption>
+          </figure>
+          <figure class="card" tabindex="0">
+            <picture class="card__image">
+              <source
+                srcset="./images/desktop/image-soccer-team.jpg"
+                media="(min-width:600px)" />
+              <img
+                src="./images/mobile/image-soccer-team.jpg"
+                alt="Soccer Team VR – A dynamic scene featuring a soccer player wearing a red jersey, white shorts and matching socks."
+            /></picture>
+            <figcaption class="card__heading">
+              Soccer <br />
+              team VR
+            </figcaption>
+          </figure>
+          <figure class="card" tabindex="0">
+            <picture class="card__image">
+              <source
+                srcset="./images/desktop/image-grid.jpg"
+                media="(min-width:600px)" />
+              <img
+                src="./images/mobile/image-grid.jpg"
+                alt="The Grid – A sleek side view of a white racing car."
+            /></picture>
+            <figcaption class="card__heading">
+              The <br />
+              grid
+            </figcaption>
+          </figure>
+          <figure class="card" tabindex="0">
+            <picture class="card__image">
+              <source
+                srcset="./images/desktop/image-from-above.jpg"
+                media="(min-width:600px)" />
+              <img
+                src="./images/mobile/image-from-above.jpg"
+                alt="From Up Above VR – An aerial view of a winding road winding through the landscape."
+            /></picture>
+            <figcaption class="card__heading">
+              From up <br />
+              above VR
+            </figcaption>
+          </figure>
+          <figure class="card" tabindex="0">
+            <picture class="card__image">
+              <source
+                srcset="./images/desktop/image-pocket-borealis.jpg"
+                media="(min-width:600px)" />
+              <img
+                src="./images/mobile/image-pocket-borealis.jpg"
+                alt="Pocket Borealis – A mesmerizing display of the Northern Lights, with vibrant green and purple lights in the night sky."
+            /></picture>
+            <figcaption class="card__heading">
+              Pocket <br />
+              borealis
+            </figcaption>
+          </figure>
+          <figure class="card" tabindex="0">
+            <picture class="card__image">
+              <source
+                srcset="./images/desktop/image-curiosity.jpg"
+                media="(min-width:600px)" />
+              <img
+                src="./images/mobile/image-curiosity.jpg"
+                alt="The Curiosity – A detailed view of a Mars exploration rover, equipped with cameras and scientific instruments, navigating the rocky terrain."
+            /></picture>
+            <figcaption class="card__heading">
+              The <br />
+              curiosity
+            </figcaption>
+          </figure>
+          <figure class="card" tabindex="0">
+            <picture class="card__image">
+              <source
+                srcset="./images/desktop/image-fisheye.jpg"
+                media="(min-width:600px)" />
+              <img
+                src="./images/mobile/image-fisheye.jpg"
+                alt="Fisheye – A unique aerial shot of a serene lake beside a road, distorted into a stunning fisheye perspective."
+            /></picture>
+            <figcaption class="card__heading">
+              Make it <br />
+              fisheye
+            </figcaption>
+          </figure>
+        </div>
+        <button type="button" class="creations__button">See All</button>
+      </article>
+    </main>
+    <footer>
+      <a
+        class="logo"
+        href="#"
+        aria-label="Loopstudios logo redirects to home page"
+      >
+        <img src="./images/logo.svg" alt="Loopstudios" />
+      </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Careers</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Events</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Products</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Support</a></li>
+        </ul>
+      </nav>
+      <nav class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="facebook.com" class="social__link"
+              ><img src="./images/icon-facebook.svg" alt="facebook"
+            /></a>
+          </li>
+          <li class="social__item">
+            <a href="x.com" class="social__link"
+              ><img src="./images/icon-twitter.svg" alt="twitter"
+            /></a>
+          </li>
+          <li class="social__item">
+            <a href="pinterest.com" class="social__link"
+              ><img src="./images/icon-pinterest.svg" alt="pinterest"
+            /></a>
+          </li>
+          <li class="social__item">
+            <a href="instagram.com" class="social__link"
+              ><img src="./images/icon-instagram.svg" alt="instagram"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <p class="copyright">© 2021 Loopstudios. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

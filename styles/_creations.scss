@@ -1,0 +1,122 @@
+.creations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  .creations__heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .creations__button {
+    padding: 0.5rem 2.5rem;
+    border: 1px solid $color-secundary;
+    border-radius: 0;
+    background-color: $color-primary;
+    font: $font-heading;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    outline: none;
+    cursor: pointer;
+  }
+  .creations__button:focus,
+  .creations__button:hover {
+    background-color: $color-secundary;
+    color: $color-text-dark;
+  }
+  .creations__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .card {
+      width: 100%;
+      height: 125px;
+      position: relative;
+      overflow: hidden;
+      outline: none;
+      cursor: pointer;
+
+      .card__heading {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 125px;
+        padding: 1rem;
+        background: $color-overlay-dark;
+
+        display: flex;
+        align-items: flex-end;
+
+        color: $color-text-dark;
+        font-size: 1.5rem;
+        font-weight: 100;
+      }
+    }
+    .card:focus .card__heading,
+    .card:hover .card__heading {
+      background: none;
+      background-color: $color-overlay-light;
+      color: $color-text-light;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .creations {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .creations__heading {
+      order: 1;
+    }
+    .creations__button {
+      order: 2;
+    }
+    .creations__list {
+      order: 3;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      .card {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          object-fit: fill;
+        }
+        .card__heading {
+          width: 100%;
+          height: 100%;
+          padding: 1rem;
+          background: $color-overlay-dark;
+
+          display: flex;
+          align-items: flex-end;
+
+          color: $color-text-dark;
+          font-size: 1rem;
+          font-weight: 100;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .creations {
+    padding: 0;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .creations {
+    padding: 0;
+    width: 80%;
+  }
+}
