@@ -545,10 +545,10 @@ footer .copyright {
     width: 120px;
     margin: 0;
   }
-  footer .nav {
+  footer .footer-nav {
     grid-area: pages;
   }
-  footer .nav .nav__list {
+  footer .footer-nav .nav__list {
     flex-direction: row;
     gap: 1rem;
     padding: 0;
